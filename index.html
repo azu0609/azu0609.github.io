@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>azu0609's Github Pages</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#">
+          <img src="logo.png" alt="Logo">
+        </a>
+      </div>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <header class="hero">
+      <div class="hero-text">
+        <h1>Hello!</h1>
+        <p>This is a website created by ChatGPT less then 5m.</p>
+        <button class="btn1">Get it</button>
+        <button class="btn2">Learn more</button>
+      </div>
+      <div class="hero-image">
+        <img src="Body.png" alt="Image">
+      </div>
+    </header>
+    <section class="services">
+      <div class="service">
+        <a href="https://github.com/azu0609/repo">
+          <img src="Repo.png" alt="Repository">
+          <h2>Repository</h2>
+          <p>Repository for altstore and scarlet.</p>
+        </a>
+      </div>
+      <div class="service">
+        <a href="https://github.com/azu0609/snapshot-manager">
+          <img src="snapshot-manager.logo.png" alt="Snapshot manager">
+          <h2>Snapshot manager</h2>
+          <p>Manage qemu vm snapshot easily, even on uefi vm.</p>
+        </a>
+      </div>
+      <div class="service">
+        <a href="https://github.com/azu0609/tofu">
+          <img src="service3.png" alt="Tofu">
+          <h2>Tofu</h2>
+          <p>Simple app for android! enjoy and relax.</p>
+        </a>
+      </div>
+    </section>
+    <button onclick="topFunction()" id="scroll-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("scroll-to-top").style.display = "block";
+        } else {
+          document.getElementById("scroll-to-top").style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        const scrollToTop = window.setInterval(function() {
+          const pos = window.pageYOffset;
+          if ( pos > 0 ) {
+            window.scrollTo( 0, pos - 20 ); // how far to scroll on each step
+          } else {
+            window.clearInterval( scrollToTop );
+          }
+        }, 16 ); // how often to scroll (in milliseconds)
+      }
+    </script>
+  </body>
+</html>
+
