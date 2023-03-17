@@ -264,6 +264,7 @@ margin: 0;
   justify-content: space-between;
   align-items: center;
   padding: 50px 100px; /* Adjust padding here */
+  background-color: #1f2328;
 }
 
 .footer .logo img {
